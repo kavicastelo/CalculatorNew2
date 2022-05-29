@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmi">
+
+    <EditText
+        android:id="@+id/btxt1"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="560dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:windowSoftInputMode="stateHidden" />
+
+    <Spinner
+        android:id="@+id/bspin2"
+        android:layout_width="151dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="479dp"
+        android:entries="@array/bmi_height" />
+
+    <EditText
+        android:id="@+id/btxt2"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="477dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:windowSoftInputMode="stateHidden" />
+
+    <Spinner
+        android:id="@+id/bspin1"
+        android:layout_width="151dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="561dp"
+        android:entries="@array/bmi_weight" />
+
+    <Button
+        android:id="@+id/btnBac"
+        android:layout_width="66dp"
+        android:layout_height="152dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="231dp"
+        android:background="@drawable/long_button"
+        android:text="AC"
+        android:textSize="20dp"
+        app:backgroundTint="@color/gray" />
+
+    <Button
+        android:id="@+id/btnBclear"
+        android:layout_width="66dp"
+        android:layout_height="152dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/long_button"
+        android:drawableLeft="@drawable/backspace"
+        app:backgroundTint="@color/gray" />
+
+    <Button
+        android:id="@+id/btnBok"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="392dp"
+        android:background="@drawable/button"
+        android:text="go"
+        android:textSize="20dp"
+        app:backgroundTint="@color/red" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="225dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="632dp"
+        android:text="BMI Converter"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/btnBback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="642dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <EditText
+        android:id="@+id/txtbmiiview"
+        android:layout_width="249dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="333dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:windowSoftInputMode="stateHidden"
+        android:textSize="60dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="247dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="66dp"
+        android:background="@color/red"
+        android:textStyle="bold"
+        android:text="Over Weight\n25-40"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="247dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="198dp"
+        android:background="@color/yellow"
+        android:text="Under Weight\n16.0-18.5"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="247dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="132dp"
+        android:background="@color/light_green"
+        android:text="Normal\n18.5-25"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="247dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="264dp"
+        android:text="INFORMATION"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+</RelativeLayout>

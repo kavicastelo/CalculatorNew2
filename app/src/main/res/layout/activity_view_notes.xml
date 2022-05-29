@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewNotes">
+
+    <Spinner
+        android:id="@+id/spnviewnote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="568dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="601dp"
+        android:text="Choose your file name to view it."
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/txtviewnote"
+        android:layout_width="351dp"
+        android:layout_height="364dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="188dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:windowSoftInputMode="stateHidden"
+        android:focusableInTouchMode="false"/>
+
+    <ImageButton
+        android:id="@+id/btndeletenote"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:paddingStart="1dp"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        app:srcCompat="@drawable/delete" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showImageActivity">
+
+    <Button
+        android:id="@+id/showImagesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:onClick="getData"
+        android:text="Tap here to load images"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/showImagesBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="14dp"
+        android:drawableLeft="@drawable/delete"
+        android:onClick="DeleteImage"
+        android:paddingLeft="13dp"
+        android:textAlignment="center"
+        app:backgroundTint="@color/cardview_shadow_end_color" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:id="@+id/txtdeleterow"
+        android:layout_below="@+id/showImagesBtn"
+        android:layout_marginLeft="15dp"
+        android:hint="Type image name to download or delete"
+        android:textSize="14dp"/>
+
+
+    <Button
+        android:id="@+id/btndownload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/showImagesBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="65dp"
+        android:drawableLeft="@drawable/download"
+        android:paddingLeft="13dp"
+        android:textAlignment="center"
+        android:onClick="DownloadImage"
+        app:backgroundTint="@color/cardview_shadow_end_color" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btndelete"
+        android:layout_marginTop="2dp" />
+
+</RelativeLayout>

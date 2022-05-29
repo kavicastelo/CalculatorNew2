@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.calculatornew2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalculatorNew2">
+        <activity
+            android:name=".time"
+            android:exported="false" />
+        <activity
+            android:name=".bmi"
+            android:exported="false" />
+        <activity
+            android:name=".temperature"
+            android:exported="false" />
+        <activity
+            android:name=".data"
+            android:exported="false" />
+        <activity
+            android:name=".length"
+            android:exported="false" />
+        <activity
+            android:name=".weight"
+            android:exported="false" />
+        <activity
+            android:name=".createPinFirstTimeUse"
+            android:exported="false" />
+        <activity
+            android:name=".viewNotes"
+            android:exported="false" />
+        <activity
+            android:name=".note"
+            android:exported="false" />
+        <activity
+            android:name=".showImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Image"
+            android:exported="false" />
+        <activity
+            android:name=".images.image"
+            android:exported="false" />
+        <activity
+            android:name=".UserSetting"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".admin"
+            android:exported="false" />
+        <activity
+            android:name=".hideFrame"
+            android:exported="false"
+            android:label="@string/title_activity_hide_frame"
+            android:theme="@style/Theme.CalculatorNew2.NoActionBar" />
+        <activity
+            android:name=".hiddenMenu"
+            android:exported="false" />
+        <activity
+            android:name=".frm2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

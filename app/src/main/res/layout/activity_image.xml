@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Image">
+
+    <EditText
+        android:id="@+id/imageNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Enter the Image name Here"
+        android:maxLength="25"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <ImageView
+        android:id="@+id/imageIV"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/imageNameET"
+        android:onClick="chooseImage"
+        android:paddingLeft="100dp"
+        android:paddingTop="100dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/addobject" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageIV"
+        android:onClick="storeImage"
+        android:text="Hide Image"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/red" />
+
+    <Button
+        android:id="@+id/moveToShowActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveBtn"
+        android:layout_marginTop="2dp"
+        app:backgroundTint="@color/gray"
+        android:onClick="moveToShowActivity"
+        android:text="View Hidden Images"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="632dp"
+        android:text="Tap add icon to add image..\nAdd image and after choose name to hide your image.."
+        android:paddingLeft="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <string-array name="length">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>in</item>
+        <item>feet</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>mg</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+
+    <string-array name="data">
+        <item>bit</item>
+        <item>Byte</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+        <item>TB</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string-array name="bmi_weight">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+
+    <string-array name="bmi_height">
+        <item>m</item>
+        <item>cm</item>
+        <item>feet</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>s</item>
+        <item>min</item>
+        <item>h</item>
+        <item>day</item>
+        <item>week</item>
+        <item>month</item>
+        <item>year</item>
+    </string-array>
+</resources>
